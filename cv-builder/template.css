@@ -1,0 +1,320 @@
+/* ==============================
+   CV BUILDER POPUP
+   ============================== */
+
+.builder-open {
+    overflow: hidden;
+}
+
+.cv-modal {
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    padding: 20px;
+    background: rgba(11, 20, 17, 0.7);
+}
+
+.cv-builder {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    height: 100%;
+    max-width: 1480px;
+    margin: auto;
+    overflow: hidden;
+    background: #edf0e9;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+.builder-panel {
+    padding: 28px 22px;
+    background: #172521;
+    color: #f5f2ea;
+}
+
+.close-builder {
+    float: right;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.builder-eyebrow {
+    margin: 0;
+    color: #d3fc5a;
+    font: 700 0.65rem "DM Mono", monospace;
+    text-transform: uppercase;
+}
+
+.builder-panel h2 {
+    margin: 4px 0 0;
+    font-size: 1.7rem;
+}
+
+.builder-help {
+    margin: 28px 0;
+    color: #d0d8d2;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.pdf-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d3fc5a;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font: 700 0.8rem Manrope, sans-serif;
+    cursor: pointer;
+}
+
+.pdf-button {
+    background: #d3fc5a;
+    color: #172521;
+}
+
+.pdf-button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.builder-canvas {
+    overflow: auto;
+    padding: 24px 42px 70px;
+}
+
+.canvas-title {
+    display: flex;
+    justify-content: space-between;
+    max-width: 794px;
+    margin: 0 auto 16px;
+    color: #506057;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.canvas-title span {
+    font-weight: 500;
+}
+
+.cv-preview {
+    width: 794px;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* ==============================
+   MINIMAL CV TEMPLATE
+   ============================== */
+
+.cv-document {
+    min-height: 1123px;
+    padding: 72px;
+    background: white;
+    color: #26342e;
+    box-shadow: 0 9px 25px rgba(31, 45, 38, 0.16);
+    font-family: Manrope, Arial, sans-serif;
+}
+
+.cv-document * {
+    box-sizing: border-box;
+}
+
+.cv-header {
+    display: block;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.cv-photo,
+.cv-pdf-initials {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+}
+
+.cv-photo {
+    display: block;
+    object-fit: cover;
+}
+
+.cv-pdf-initials {
+    display: grid;
+    place-items: center;
+    background: #172521;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.cv-header h1 {
+    margin: 0;
+    color: #172521;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: -0.06em;
+}
+
+.cv-header h1 + p {
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.cv-header address {
+    margin-top: 18px;
+    color: #5a655f;
+    font-size: 0.7rem;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.cv-document section {
+    margin-top: 27px;
+}
+
+.cv-document h2 {
+    margin: 0 0 10px;
+    color: #26342e;
+    font-size: 0.75rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.cv-document h3 {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: -0.025em;
+}
+
+.cv-document p {
+    margin: 7px 0 0;
+    font-size: 0.78rem;
+    line-height: 1.55;
+}
+
+.cv-summary {
+    font-size: 0.92rem !important;
+}
+
+.cv-entry {
+    position: relative;
+    padding: 13px 28px 13px 0;
+    border-top: 1px solid #e1e4e1;
+}
+
+.cv-date {
+    color: #647169;
+    font-size: 0.67rem !important;
+    font-weight: 700;
+}
+
+.cv-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.cv-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cv-skills li {
+    position: relative;
+    padding: 4px 7px;
+    border: 1px solid #aeb8ac;
+    color: #172521;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/* Buttons only appear while editing, not in the saved PDF. */
+.entry-delete {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    border: 0;
+    border-radius: 50%;
+    background: #f5dfdc;
+    color: #912a22;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cv-entry:hover .entry-delete,
+.cv-skills li:hover .entry-delete {
+    opacity: 1;
+}
+
+.skill-delete {
+    top: -8px;
+    right: -8px;
+}
+
+.add-entry {
+    margin-top: 9px;
+    padding: 6px 10px;
+    border: 1px dashed #9ba69f;
+    background: transparent;
+    color: #52645a;
+    font: 700 0.65rem Manrope, sans-serif;
+    cursor: pointer;
+}
+
+.cv-document [contenteditable="true"] {
+    border-radius: 2px;
+    outline: 0;
+}
+
+.cv-document [contenteditable="true"]:hover,
+.cv-document [contenteditable="true"]:focus {
+    background: #fff3a2;
+    box-shadow: 0 0 0 2px #fff3a2;
+}
+
+/* The PDF is created from this off-screen copy. */
+.pdf-export-area {
+    position: fixed;
+    top: 0;
+    left: -10000px;
+    width: 794px;
+    background: white;
+}
+
+@media (max-width: 760px) {
+    .cv-modal {
+        padding: 0;
+    }
+
+    .cv-builder {
+        grid-template-columns: 1fr;
+    }
+
+    .builder-panel {
+        max-height: 38vh;
+    }
+
+    .builder-canvas {
+        padding: 20px 12px 55px;
+    }
+
+    .cv-document {
+        min-height: auto;
+        padding: 38px 24px;
+    }
+
+    .cv-projects {
+        grid-template-columns: 1fr;
+    }
+}

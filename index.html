@@ -1,132 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinegugu Thumbeza  - Software Developer CV</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Digital CV of Sinegugu Mteshane, Junior Software Developer.">
+  <title>Sinegugu Mteshane | Junior Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cv-builder/template.css">
 </head>
 <body>
-    <main class="cv-page">
-        <header class="hero">
-            <img class="profile-photo" src="c:\Users\gumte\Downloads\cv\cv\cv\1778498265249.jpg" alt="Professional photograph of Linda Malinda">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Sinegugu Mteshane home">SM<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
+      <button class="print-button" type="button">Download CV <span aria-hidden="true">↓</span></button>
+    </nav>
+  </header>
 
-            <div class="hero-content">
-                <p class="eyebrow">Curriculum Vitae</p>
-                <h1>Snegugu Thumbeza </h1>
-                <p class="title">Junior Software Developer</p>
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="intro-heading">
+      <div class="hero-copy">
+        <p class="kicker">Junior software developer · South Africa</p>
+        <h1 id="intro-heading">Sinegugu<br>Mteshane.</br></h1>
+        <p class="hero-summary">I build thoughtful, reliable web and fullstake projects one clean line of code at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:gumteshane@gmail.com">Let's work together <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#projects">View my work <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame"><img src="Photos/Copilot_20260716_130307.png" alt="Sinegugu Mteshane"></div>
+        <div class="availability"><span></span>Available Immediately</div>
+      </div>
+    </section>
 
-                <address class="contact-details">
-                    <a href="mailto:gumteshane@gmail.com">gumteshane@gmail.com</a>
-                    <a href="tel:+27797223281">+27797223281</a>
-                    <a href="http://www.linkedin.com/in/sinegugu-mteshane-9a4a8140b" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href="https://github.com/mteshane121" target="_blank" rel="noreferrer">GitHub</a>
-                </address>
-            </div>
-        </header>
+    <section id="about" class="about section-shell content-section">
+      <p class="section-number">About me</p>
+      <div class="section-content intro-grid">
+        <h2>Making it all <br>Come to life.</h2>
+        <div>
+          <p class="lead">I am a passionate software development a learner with hands-on experience in web development, Java and database-backed applications.</p>
+          <p>I enjoy turning ideas into clean, practical solutions and solving the small details that make a product feel dependable. I am seeking an internship or junior developer role where I can grow with a thoughtful engineering team and contribute to a meaningful work.</p>
+          <div class="contact-row">
+            <a href="mailto:gumteshane@gmail.com">Email</a>
+            <a href="tel:+27797223281">+27 79 722 3281</a>
+            <a href="https://www.linkedin.com/in/sinegugu-mteshane-9a4a8140b" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/mteshane121" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="section">
-            <h2>Professional Summary</h2>
-            <p>
-                Passionate software development learner with experience in HTML, CSS, JavaScript,
-                Java, SQL, Git/ GitHub and problem-solving. I enjoy building clean, useful web applications
-                and I am seeking for an internship or junior developer opportunity where I can grow my
-                technical skills and contribute to meaningful projects.
-            </p>
-        </section>
+    <section id="skills" class="skills-section section-shell content-section">
+      <p class="section-number">Expertise</p>
+      <div class="section-content">
+        <h2>My Skills and Tools.</h2>
+        <ul class="skill-list" aria-label="Technical and professional skills">
+          <li>HTML5 </li><li>CSS3</li><li>JavaScript</li><li>Java</li><li>Spring Boot </li><li>SQL &amp; PostgreSQL </li><li>Git &amp; GitHub </li><li>Problem solving </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="section">
-            <h2>Skills</h2>
-            
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>SQL</li>
-                <li>PostgreSQL</li>
-                <li>Git & GitHub</li>
-                <li>Problem Solving</li>
-                <li>Communication</li>
-            
-        </section>
+    <section id="projects" class="projects-section section-shell content-section">
+      <p class="section-number">My pefect project journey.</p>
+      <div class="section-content">
+        <div class="section-heading"><h2>Projects that taught<br>me to build better.</h2></div>
+        <div class="projects-grid">
+          <a class="project project-featured" href="https://github.com/mteshane121/Automation-Simple-backend-API" target="_blank" rel="noreferrer"><span class="project-index">01</span><div><p class="project-type">Backend development</p><h3>Foundation API <span>↗</span></h3><p>Spring Boot API with PostgreSQL, Flyway migrations, REST controllers and Swagger documentation.</p><ul><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li></ul></div></a>
+          <a class="project" href="https://github.com/mteshane121/hustlehub-sa" target="_blank" rel="noreferrer"><span class="project-index">02</span><div><p class="project-type">Frontend development</p><h3>HustleHub SA <span>↗</span></h3><p>A responsive digital hub designed around South African community enterprise services.</p><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div></a>
+          <a class="project" href="https://github.com/mteshane121/Linda-Foundation" target="_blank" rel="noreferrer"><span class="project-index">03</span><div><p class="project-type">Web design</p><h3>Linda Foundation <span>↗</span></h3><p>A clear presentation website for a community foundation and its services.</p><ul><li>Web UI</li><li>CSS</li><li>UX</li></ul></div></a>
+        </div>
+      </div>
+    </section>
 
-        <section class="section">
-            <h2>Education</h2>
-            <article class="item">
-                <div>
-                    <h3>Durban University of technology -Diploma in ICT </h3>
-                    <p>DNA Software Development Academy</p>
-                </div>
-                <p class="date">2026</p>
-                <p class="details">
-                    Major subjects: Web Development, Java Programming, Database Design,
-                    Software Testing, Git and Project Development.
-                </p>
-            </article>
-        </section>
+    <section id="experience" class="experience-section section-shell content-section">
+      <p class="section-number">My Growth Work Experience</p>
+      <div class="section-content">
+        <h2> Work-Experience  </h2>
+        <div class="timeline">
+          <article><div class="timeline-date">Jul 2026 - Present</div><div><p class="timeline-label">Experience</p><h3>Software Developer Learnership <span>· DynamicDNA</span></h3><p>Building practical frontend and backend projects, using version control, debugging applications and creating database-backed solutions.</p></div></article>
+          <article><div class="timeline-date">Jul 2025 - May 2026 </div><div><p class="timeline-label">Experience</p><h3>Contract Developer <span>· Falcorp Technologies</span></h3><p>Built component designs, collaborated in Git-based workflows and created supporting technical documentation.</p></div></article>
+        </div>
+        <div class="section-content">
+                <h2> Education  </h2>
+                <article><div class="timeline-date">Completed Jul 2024</div><div><p class="timeline-label"><br>Education</br><h3>Diploma in ICT <span>· Durban University of Technology</span></h3><p>Core study areas included web development, Java programming, database design, software testing, Git and project development.</p></div></article>
+        </div>
+      </div>
+    </section>
 
-        <section class="section">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <article class="project-card">
-                    <h3>Foundation API</h3>
-                    <p>
-                        Built a Spring Boot backend API with PostgreSQL, Flyway migrations,
-                        REST controllers and Swagger documentation.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>
-                        Created a responsive personal portfolio using HTML and CSS to showcase
-                        skills, education and software projects.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Student Registration Form</h3>
-                    <p>
-                        Designed an HTML form with structured inputs, validation-friendly fields
-                        and clean CSS styling.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Work Experience</h2>
-            <article class="item">
-                <div>
-                    <h3>Academic Software Development Projects</h3>
-                    <p>Work Integrated Learning</p>
-                </div>
-                <p class="date">2026</p>
-                <p class="details">
-                    Built practical web and backend projects, worked with version control,
-                    practiced debugging, and created database-backed applications using modern
-                    development tools.
-                </p>
-            </article>
-        </section>
-
-        <section class="section">
-            <h2>References</h2>
-            <div class="references">
-                <article>
-                    <h3>Mr Kg</h3>
-                    <p>Lecturer / Mentor</p>
-                    <a href="mailto:mrkg@dynamicdna.com">mrkg@dynamicdna.com</a>
-                </article>
-
-                <article>
-                    <h3>Lesego Mollo</h3>
-                    <p>Project Supervisor</p>
-                    <a href="mailto:falcorptechnologies@gmail.com">falcorptechnologies@gmail.com</a>
-                </article>
-            </div>
-        </section>
-    </main>
+    <section class="cta section-shell">
+      <p class="kicker">Have an opportunity in mind lets get in touch ?</p>
+      <a href="mailto:gumteshane@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+      <p>Based in Randburg, Gauteng<br>Open to junior developer roles &amp; internships.</p>
+    </section>
+  </main>
+  <footer><p>© 2026 Sinegugu Mteshane</p><a href="#top">Back to top ↑</a></footer>
+  <script src="libraries/html2pdf.bundle.min.js"></script>
+  <script defer src="cv-builder/cvData.js"></script>
+  <script defer src="cv-builder/cvEditor.js"></script>
+  <script defer src="cv-builder/pdfGenerator.js"></script>
+  <script defer src="cv-builder/cvModal.js"></script>
+  <script defer src="script.js"></script>
 </body>
 </html>
